@@ -25,6 +25,10 @@
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
 
+    <style>
+      h1, h2 {padding-top: 10%;}
+    </style>
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -39,8 +43,8 @@
 			
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h2>Fall 2012 Infrastructure Update</h2>
+        <section>
+				  <h1 style="padding-top: 5%;">Fall 2012 Infrastructure Update</12>
           <h4>Christopher Webber</br>Systems Administrator</h4>
 				</section>
 				
@@ -61,7 +65,7 @@
 
         <section>
           <section>
-            <h1>Internal Infrastructure</h1>
+              <h1>Internal Infrastructure</h1>
           </section>
 
           <section>
@@ -144,6 +148,13 @@
               <li>Automounter</li>
             </ul>
           </section>
+          <section>
+           <h2>Planned</h2>
+            <ul>
+              <li>Sequencing Data Directly Available</li>
+              <li>Rebuild of Current Storage</li>
+            </ul>
+          </section>
         </section>
 
         <section>
@@ -155,6 +166,7 @@
         </section>
         <section>
           <h1>Questions?</h1>
+          <h4><a href="https://cwebberOps.github.com/2012-fall-infra-update">https://cwebberOps.github.com/2012-fall-infra-update</a></h4>
         </section>
 			</div>
 
@@ -182,6 +194,7 @@
 				controls: true,
 				progress: true,
 				history: true,
+        rollingLinks: true,
 				
 				theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
